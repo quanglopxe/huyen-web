@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: tahoma;
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+/* Icon Tìm kiếm */
+.container-1{
+    width: 250px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: absolute;
+    top: 3px;
+    right: 60px;
+}
+.container-1 input#search{
+    width: 20px;
+    height: 25px;
+    background: #cacccf;
+    border: 1px solid black;
+    font-size: 10pt;
+    float: left;
+    color: #cacccf;
+    padding-left: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: rgb(6, 4, 4);
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+container-1 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+    color: #65737e;  
+}
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: #65737e;  
+}
+.container-1 input#search:-ms-input-placeholder {  
+    color: #65737e;  
+}
+.container-1 .icon{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: 5px;
+    z-index: 1;
+    color: #000000;
+}
+.container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    width: 300px;
+  }
+  .container-1:hover input#search{
+  width: 200px;
+  }
+  .container-1:hover .icon{
+    color: #000000;
+  }
+/* Menu */
+header{
+    background-color: black;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+/* Thông tin, màu sắc, vị trí của header */
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    background-color: black;
+    width: 100%;
+}
+
+nav ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    position: absolute;
+    top: 0;
+    transform: translateX(55%);
+    align-items: center;
+}
+nav ul li:hover{
+    opacity: 1.0;
+    filter: alpha(opacity 10 0);
+}
+nav ul li{
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+}
+
+nav ul li, a{
+    color: rgb(255, 255, 255);
+}
+
+.main{
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+/* Hình ảnh Banner quảng cáo */
+#slide{
+    margin: 0 auto;
+    position: relative;
+}
+
+#slide img{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+#slide img-feature{
+    animation: slideLeft 1s ease-in-out forwards;
+}
+/* 2 icon mũi tên trái phải */
+.control{
+    position: absolute;
+    top: 45%;
+    color: rgb(100, 96, 96);
+    font-size: 50px;
+    transform: translateY(-50%);
+}
+
+/*2 Button cho ảnh banner*/
+.prev{
+    left: 10px;
+    opacity: 0.2;
+    filter: alpha(opacity = 50);
+}
+.next{
+    right: 10px;
+    opacity: 0.2;
+    filter: alpha(opacity = 50);
+}
+
+.prev:hover{
+    opacity: 0.8;
+    filter: alpha(opacity 8 0);
+}
+
+.next:hover{
+    opacity: 1.0;
+    filter: alpha(opacity 10 0);
+}
+
+/* Tiêu đề hỗ trợ trả góp */
+.title{
+    font-size: 30px;
+    padding-top: 10px;
+    position: absolute;
+    transform: translateX(20%);
+}
+
+/* Danh mục sản phẩm*/
+#border{
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    object-fit: cover;
+    gap: 1rem;
+    transform: translateX(30px);
+}
+
+ul li#border:hover{
+    box-shadow: 5px 5px 5px rgb(20, 20, 20);
+}
+
+/*Danh Sách Iphone*/
+
+#border1{
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    object-fit: cover;
+    gap: 1rem;
+    transform: translateX(30px);
+}
+
+ul li#border1:hover{
+    box-shadow: 5px 5px 5px rgb(20, 20, 20);
+}
+#ip{
+    display: flex;
+    position: absolute;
+    left: 70px;
+    top: 1000px;
+}
+/*Danh Sách iPad*/
+#border2{
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    object-fit: cover;
+    gap: 1rem;
+    transform: translateX(30px);
+}
+
+ul li#border2:hover{
+    box-shadow: 5px 5px 5px rgb(20, 20, 20);
+}
+#ipad{
+    display: flex;
+    position: absolute;
+    top: 1700px;
+    transform: translateX(70px);
+}
+/*list-macbook*/
+#border3{
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    object-fit: cover;
+    gap: 1rem;
+}
+ul li#border3:hover{
+    box-shadow: 5px 5px 5px rgb(20, 20, 20);
+}
+
+#mac{
+    display: flex;
+    position: absolute;
+    transform: translateX(100px);
+    top: 2450px;
+}
+
+/*List Apple Watch*/
+#border4{
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    object-fit: cover;
+    gap: 1rem;
+}
+
+ul li#border4:hover{
+    box-shadow: 5px 5px 5px rgb(20, 20, 20);
+}
+#apw{
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 3180px;
+}
+
+/*List phụ kiện iphone*/
+#border5{
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    object-fit: cover;
+    gap: 1rem;
+}
+
+ul li#border5:hover{
+    box-shadow: 5px 5px 5px rgb(20, 20, 20);
+}
+#PK{
+    display: flex;
+    position: absolute;
+    gap: 1rem;
+    top: 3870px;
+    left: 100px;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.footer{
+    border: 1px solid white;
+    background-color: rgb(221, 231, 240);
+    width: 100%;
+    height: 200px;
+    font-size: 18px;
+    padding-top: 50px;
+    position: absolute;
+    top: 4600px;
+    display: flex;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+.column{
+    width: 100%;
+}
+@media screen and(min-width: 992px){
+    .list{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 1.5rem;
+    }
+    #ip{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 1.5rem;
+    }
+}
+

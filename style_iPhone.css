@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: tahoma;
+}
+/*Main*/
+.header{
+    border: 1px solid black;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.container-1{
+    width: 250px;
+    vertical-align: middle;
+    padding-top: 10px;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    right: 60px;
+}
+.container-1 input#search{
+    width: 20px;
+    height: 25px;
+    background: #cacccf;
+    border: 1px solid black;
+    font-size: 10pt;
+    float: left;
+    color: #cacccf;
+    padding-left: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: rgb(6, 4, 4);
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+container-1 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+    color: #65737e;  
+}
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: #65737e;  
+}
+.container-1 input#search:-ms-input-placeholder {  
+    color: #65737e;  
+}
+.container-1 .icon{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: 5px;
+    padding-top: 5px;
+    z-index: 1;
+    color: #000000;
+}
+.container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    width: 300px;
+  }
+  .container-1:hover input#search{
+  width: 200px;
+  }
+  .container-1:hover .icon{
+    color: #000000;
+  }
+  /* Menu */
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    background-color: black;
+    width: 100%;
+}
+
+nav ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    transform: translateX(55%);
+    align-items: center;
+}
+nav ul li:hover{
+    opacity: 1.0;
+    filter: alpha(opacity 10 0);
+}
+nav ul li{
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+}
+
+nav ul li, a{
+    color: white;
+}
+
+.main{
+    position: relative;
+}
+#breadcrumb{
+    position: absolute;
+    top: 50px;
+    font-size: 20px;
+    transform: translateX(10px);
+    color: black;
+    font-family: tahoma;
+    opacity: 0.7;
+    filter: alpha(opacity = 50);
+}
+#breadcrumb:hover{
+    opacity: 1.5;
+    filter: alpha(opacity 10 0);
+}
+/*List sản phẩm*/
+#border{
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    object-fit: cover;
+    gap: 1rem;
+    transform: translateX(170px);
+}
+
+ul li#border:hover{
+    box-shadow: 5px 5px 5px rgb(20, 20, 20);
+}
+.footer{
+    border: 1px solid white;
+    background-color: rgb(221, 231, 240);
+    width: 100%;
+    height: 200px;
+    font-size: 18px;
+    padding-top: 50px;
+    position: absolute;
+    top: 1500px;
+    display: flex;
+    object-fit: cover;
+    justify-content: space-between;
+}
